@@ -1,5 +1,5 @@
-import React from 'react'
 
+import React, { useState } from 'react'
 import './Contact.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
@@ -21,7 +21,7 @@ const Contact = () => {
 
     const data = await response.json();
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Form submitted successfully to Catherine");
       event.target.reset();
     } else {
       setResult("Error");
@@ -58,6 +58,7 @@ const Contact = () => {
           <label htmlFor="">Write your message here!</label>
           <textarea name="message" rows='8' placeholder='Enter your message'></textarea>
           <button type='submit' className="contact-submit">Submit Now</button>
+          {result && <p className="contact-result" aria-live="polite">{result}</p>}
         </form>  
       </div>
     </div>
