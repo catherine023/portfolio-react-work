@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import footer_logoo from '../../assets/footer_logoo.svg'
 import user_icon from '../../assets/user_icon.svg'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Footer = () => {
   return (
