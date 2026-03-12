@@ -4,15 +4,17 @@
     justify-content: space-between;
     margin:20px 170px;
 }
+/*The Logo IMG in nav bar top left */
 
 .navbar img{
-    width: 120px;
+  
+    width: 100px;
     height: 100px;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 100%;
+    border-radius: 70px;
    
 }
-
+/* The Navigation Menu */
 .nav-menu{
     display:flex;
     align-items: center;
@@ -22,15 +24,18 @@
     font-size:20px;
 
 }
+/*THE UNDERLINE IMG in nav bar */
+.nav-menu img{
+     width: 60px;
+    height: 60px;
+   padding-top: 1px;
+}
 
 .nav-connect{
     padding:10px;
     border-radius: 50px;
     background:linear-gradient(267deg, #DA7C25 0.36%, #B923E1);
-
 }
-
-
 
 .anchor-link{
 text-decoration:none;
