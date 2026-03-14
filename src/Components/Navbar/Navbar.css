@@ -36,9 +36,50 @@
     border-radius: 50px;
     background:linear-gradient(267deg, #DA7C25 0.36%, #B923E1);
 }
-
+/* Saw this code was missing and added from the video, not sure if it was deleted or not but adding it back in just in case */
+.nav-menu li img {
+    display:flex;
+   margin:auto;
+}
 .anchor-link{
 text-decoration:none;
 color:white;
 }
+@media(max-width:768px){
+    .navbar{
+        margin:20px 50px;
+    }
+    .nav-connect{
+        display:none;
+    }
+    .nav-mob-open{
+        display:block;
+        position:fixed;
+        right:30px;
+    }
+    .nav-mob-close{
+        display:none;
+    }
+    .nav-menu{
+        position:fixed;
+        flex-direction: column;
+        align-items:start;
+        top:0px;
+        gap:30px;
+        background-color:#561a66 ;
+        width:350px;
+        height:100%;
+        z-index: 2;
+        transition: right 0.5s;
+        /* hides the nav bar in mobile view */
+        right: -350px;
+    }
+     .nav-menu li{
+        font-size:30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;  
+    }
+}
 /* left off here 2:13:24 */
+/* left off here 2:20:10 March 12th 26' */
