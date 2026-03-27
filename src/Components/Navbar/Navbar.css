@@ -1,85 +1,134 @@
-.navbar{
-    display:flex;
+/* ========================
+   NAVBAR BASE (Desktop)
+   ======================== */
+
+.navbar {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:20px 170px;
+    margin: 20px 170px;
 }
-/*The Logo IMG in nav bar top left */
 
-.navbar img{
-  
+/* Logo */
+.navbar-logo {
     width: 100px;
     height: 100px;
-    border-radius: 100%;
     border-radius: 70px;
-   
 }
-/* The Navigation Menu */
-.nav-menu{
-    display:flex;
+
+/* Connect button */
+.nav-connect {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1);
+    text-decoration: none;
+    color: white;
+}
+
+/* Anchor links */
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hide mobile-only icons on desktop */
+.nav-mob-open,
+.nav-mob-close {
+    display: none;
+}
+
+/* ========================
+   NAV MENU (Desktop)
+   ======================== */
+
+.nav-menu {
+    display: flex;
     align-items: center;
     list-style: none;
-    gap:60px;
-    margin-bottom: 0px;
-    font-size:20px;
-
-}
-/*THE UNDERLINE IMG in nav bar */
-.nav-menu img{
-     width: 60px;
-    height: 60px;
-   padding-top: 1px;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 
-.nav-connect{
-    padding:10px;
-    border-radius: 50px;
-    background:linear-gradient(267deg, #DA7C25 0.36%, #B923E1);
+/* Underline image sits centered below each nav item */
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* Saw this code was missing and added from the video, not sure if it was deleted or not but adding it back in just in case */
+
+/* Underline SVG size */
 .nav-menu li img {
-    display:flex;
-   margin:auto;
+    width: 35px;
+    height: 35px;
+    padding-top: 1px;
 }
-.anchor-link{
-text-decoration:none;
-color:white;
-}
-@media(max-width:768px){
-    .navbar{
-        margin:20px 50px;
+
+/* ========================
+   MOBILE (max-width: 768px)
+   ======================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        margin: 20px 50px;
     }
-    .nav-connect{
-        display:none;
+
+    /* Hide connect button on mobile */
+    .nav-connect {
+        display: none;
     }
-    .nav-mob-open{
-        display:block;
-        position:fixed;
-        right:30px;
+
+    /* Show hamburger icon */
+    .nav-mob-open {
+        display: block;
+        cursor: pointer;
     }
-    .nav-mob-close{
-        display:none;
-    }
-    .nav-menu{
-        position:fixed;
+
+    /* Slide-in menu panel */
+    .nav-menu  {
+        position: fixed;
         flex-direction: column;
-        align-items:start;
-        top:0px;
-        gap:30px;
-        background-color:#561a66 ;
-        width:350px;
-        height:100%;
+        align-items: center;
+        top: 0;
+        right: -350px;
+        width: 350px;
+        height: 100%;
+        gap: 30px;
+        padding: 20px 0;
+        background-color: #370e43;
         z-index: 2;
         transition: right 0.5s;
-        /* hides the nav bar in mobile view */
-        right: -350px;
     }
-     .nav-menu li{
-        font-size:30px;
-        padding-left: 100px;
-        flex-direction: row;
-        gap: 20px;  
+
+    /* Each nav item centered */
+    .nav-menu li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;/* THIS is the fix — gives each item a defined width to center within */
+        font-size: 30px;
+        padding: 0;
+    }
+
+    /* X close button li — pinned to top right */
+    .nav-close-li {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-self: flex-end;        /* THIS is the fix — breaks out of parent centering */
+        width: 100%;
+        padding-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Show and size the X icon */
+    .nav-mob-close {
+        display: block;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
     }
 }
-/* left off here 2:13:24 */
-/* left off here 2:20:10 March 12th 26' */
