@@ -15,11 +15,11 @@ const About = () => {
                  <div className="about-left">
                    <img src={profile_img} alt="" />
               </div>
-              <div className="about_right">
+              <div className="about-right">
                 <div className="about-para">
                     <p>I want to gain more hands on experience in the front-end developer and UX design world. </p>
                     <p>My curisiosity to build projects for people and create community is what fuels the work I do. </p>
-                </div><br></br>
+                </div>
                 <div className="about-skills">
                   <div className="about-skill"> <p>HTML & CSS</p> <hr style={{width: "50%"}}/></div>
                   <div className="about-skill"> <p>React JS</p> <hr style={{width: "60%"}}/></div>
