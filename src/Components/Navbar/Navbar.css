@@ -84,7 +84,14 @@
     .nav-mob-open {
         display: block;
         cursor: pointer;
+         position:fixed;
+        top:50px;
+         left: calc(100% - 60px); /* pushes from left side instead */
+        padding-right:0px
+        
+        
     }
+    
 
     /* Slide-in menu panel */
     .nav-menu  {
