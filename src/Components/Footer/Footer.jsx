@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import footer_logoo from '../../assets/footer_logoo.svg'
+import co_logo from '../../assets/co_logo.svg'
 import user_icon from '../../assets/user_icon.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -10,23 +10,17 @@ const Footer = () => {
 <div className='footer'>
   <div className="footer-top">
     <div className="footer-top-left">
-      <img src={footer_logoo} alt="" />
-      <p>I am a frontend developer from, USA with 9 months of experience</p>
+      <img src={co_logo} alt="CO logo" />
+      <p>I am a Full Stack Developer at New York City College of Technology</p>
     </div>
-    <div className="footer-top-right">
-      <div className="footer-email-input">
-        <img src={user_icon} alt="" />
-        <input type="email" placeholder='Enter your email'/>
-      </div>
-      <div className="footer-subscribe">Subscribe</div>
-    </div>
+    
   </div>  {/* ← footer-top closes HERE */}
 
   <div className="footer-bottom">  {/* ← now a sibling, not a child */}
     <p className="footer-bottom-left">© 2025 Catherine Ochoa. All rights reserved.</p>
     <div className="footer-bottom-right">
-      <p>Term of Services</p>
-      <p>Privacy Policy</p>
+      <p>GitHub</p>
+      <p>LinkedIn</p>
       <p>Connect with Me</p>
     </div>
   </div>
