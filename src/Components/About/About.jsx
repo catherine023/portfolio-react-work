@@ -21,10 +21,11 @@ const About = () => {
                     <p>My curisiosity to build projects for people and create community is what fuels the work I do. </p>
                 </div>
                 <div className="about-skills">
-                  <div className="about-skill"> <p>HTML & CSS</p> <hr style={{width: "50%"}}/></div>
+                  <div className="about-skill"> <p>HTML & CSS</p> <hr style={{width: "90%"}}/></div>
                   <div className="about-skill"> <p>React JS</p> <hr style={{width: "60%"}}/></div>
-                  <div className="about-skill"> <p>Javascript</p> <hr style={{width: "70%"}}/></div>
-                   <div className="about-skill"> <p>Next JS</p> <hr style={{width: "50%"}}/></div>
+                   <div className="about-skill"> <p>Python</p> <hr style={{width: "50%"}}/></div>
+                  <div className="about-skill"> <p>Javascript</p> <hr style={{width: "30%"}}/></div>
+                  
                  </div>
                 </div>
               </div>
@@ -36,12 +37,12 @@ const About = () => {
                 </div>
                 <hr/>
                 <div className="about-achievement">
-                  <h1>2+</h1>  
+                  <h1>3+</h1>  
                   <p> PROJECTS COMPLETED </p>
                 </div>
                 <hr/>
                 <div className="about-achievement">
-                  <h1>3+</h1>  
+                  <h1>2+</h1>  
                   <p> HAPPY CLIENTS </p>
 
                 </div>

@@ -19,7 +19,7 @@
   
     gap: 20px;
 }
-.footer-top-left p{
+.footer-top-left p {
 font-size: 20px;
 max-width: 400px;
 margin-top: 10px;;
@@ -62,7 +62,20 @@ margin-top: 10px;;
 .footer-bottom-right{
     display:flex;
     gap:50px;
+    font-size:20px;
     margin-bottom:50px;
+}
+.footer-bottom-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-bottom-right a:hover {
+    color: #DF8908;
+    transition: 0.3s;
 }
 .footer-email-input:hover{
     border:2px solid white;

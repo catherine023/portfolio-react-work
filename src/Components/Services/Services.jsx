@@ -16,11 +16,11 @@ const Services = () => {
                         <h3> {service.s_no}</h3>
                         <h2> {service.s_name}</h2>
                         <p>{service.s_desc}</p>
-                        <div className="services-readmore">
+                     {/*   <div className="services-readmore">
                             <p>Read more</p>
                             <img src={arrow_icon} alt="" />
                         </div>
-
+*/}
 
                     </div>
                 })}

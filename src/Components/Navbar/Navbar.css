@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    margin: 25px 20px 0px 10px; /* top right bottom left */
 }
 
 /* Logo */
@@ -14,6 +14,7 @@
     width: 100px;
     height: 100px;
     border-radius: 70px;
+  
 }
 
 /* Connect button */
@@ -45,10 +46,10 @@
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 60px;
+    gap: 70px;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 27px;
 }
 
 /* Underline image sits centered below each nav item */
