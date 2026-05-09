@@ -19,7 +19,7 @@ const Footer = () => {
   <div className="footer-bottom">  {/* ← now a sibling, not a child */}
     <p className="footer-bottom-left">© 2025 Catherine Ochoa. All rights reserved.</p>
     <div className="footer-bottom-right">
-    <a href="https://catherine023.github.io/Empower-Us-/" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://github.com/catherine023" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/catherine-ochoa2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       
     </div>
